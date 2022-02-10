@@ -1,18 +1,8 @@
-# import sys
-
-
-# def txt_importer(path_file):
-#     if path_file.endswith(".txt"):
-#         return sys.stderr.write("Formato inválido\n")
-
-#
-
 import os
 import sys
 
 
 def txt_importer(path_file):
-    """Aqui irá sua implementação"""
     extension = os.path.splitext(path_file)
     if extension[1] != ".txt":
         return sys.stderr.write("Formato inválido\n")
